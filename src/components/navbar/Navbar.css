@@ -1,0 +1,149 @@
+/* ===== ASTA NAVBAR ===== */
+
+.asta-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  backdrop-filter: blur(14px);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.15)
+  );
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.asta-nav-container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 18px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+.asta-logo {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.asta-logo:hover {
+  color: #fff;
+}
+
+.asta-logo .dot {
+  color: #8b5cf6;
+  text-shadow: 0 0 12px rgba(139, 92, 246, 0.8);
+}
+
+/* LINKS */
+.asta-nav-links {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.asta-nav-links li a {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 15px;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.asta-nav-links li a:hover {
+  color: #ffffff;
+}
+
+.asta-nav-links li a::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #8b5cf6, #ec4899);
+  transition: width 0.3s ease;
+}
+
+.asta-nav-links li a:hover::after,
+.asta-nav-links li a.active::after {
+  width: 100%;
+}
+
+.asta-nav-links li a.active {
+  color: #ffffff;
+}
+
+/* ACTION */
+.asta-nav-action {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.asta-nav-action a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 15px;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.asta-nav-action a svg {
+  width: 18px;
+  height: 18px;
+}
+
+.asta-nav-action a:hover {
+  color: #ffffff;
+}
+
+.asta-nav-action a::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #8b5cf6, #ec4899);
+  transition: width 0.3s ease;
+}
+
+.asta-nav-action a:hover::after,
+.asta-nav-action a.active::after {
+  width: 100%;
+}
+
+.asta-nav-action a.active {
+  color: #ffffff;
+}
+
+.asta-login-btn {
+  background: transparent;
+  border: 1px solid rgba(139, 92, 246, 0.6);
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.asta-login-btn:hover {
+  background: rgba(139, 92, 246, 0.2);
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.6);
+}

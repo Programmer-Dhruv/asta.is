@@ -1,0 +1,110 @@
+/* ================================
+   ASTA.IS – GLOBAL STYLES
+================================ */
+
+/* ROOT */
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.92);
+  background-color: #050505;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background: radial-gradient(
+    circle at top,
+    #0b0b12,
+    #050505 60%
+  );
+  overflow-x: hidden;
+}
+
+/* LINKS */
+a {
+  font-weight: 500;
+  color: #8b5cf6;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ec4899;
+}
+
+/* HEADINGS */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* BUTTONS (GLOBAL BASE) */
+button {
+  border-radius: 999px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.4em;
+  font-size: 0.95em;
+  font-weight: 500;
+  font-family: inherit;
+  background: #111;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  border-color: #8b5cf6;
+  box-shadow: 0 0 12px rgba(139, 92, 246, 0.5);
+}
+
+button:focus,
+button:focus-visible {
+  outline: none;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #8b5cf6, #ec4899);
+  border-radius: 10px;
+}
+
+
+/* ===== HIDE SCROLLBAR ===== */
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+html, body {
+  overflow-x: hidden;
+}

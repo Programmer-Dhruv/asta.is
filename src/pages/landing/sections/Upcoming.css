@@ -1,0 +1,84 @@
+.upcoming-wrapper {
+  height: 100vh;
+  position: relative;
+  background: radial-gradient(circle at bottom, #0b0b14, #050505 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.upcoming-glow {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(139,92,246,0.15), transparent 70%);
+  filter: blur(120px);
+}
+
+.upcoming-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 1000px;
+}
+
+.upcoming-content h2 {
+  font-size: 64px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #e47272, #bfa8ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+.upcoming-content h2 span {
+  color: #8b5cf6;
+
+  text-shadow: 0 0 30px rgba(139,92,246,0.8);
+}
+
+.upcoming-tagline {
+  font-size: 18px;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 60px;
+}
+
+.upcoming-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.upcoming-card {
+  background: rgba(255,255,255,0.03);
+  
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 40px 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.upcoming-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(139,92,246,0.25);
+}
+
+.upcoming-card span {
+  font-size: 40px;
+}
+
+.upcoming-card h3 {
+  margin-top: 20px;
+  font-size: 22px;
+  color: rgba(255,255,255,0.88);
+
+}
+
+.upcoming-card p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: rgba(255,255,255,0.65);
+}
